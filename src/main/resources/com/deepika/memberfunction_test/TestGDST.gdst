@@ -122,7 +122,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>memberOf(&quot;ab&quot;,t9.getUDC())</valueString>
+        <valueString>memberOf(t9.getStrVal(),t9.getUDC())</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
