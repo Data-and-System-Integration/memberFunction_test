@@ -1,13 +1,61 @@
 <scenario>
-  <name>memberOf</name>
+  <name>memberOf.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>combined_pojo_test</type>
+      <fieldData>
+        <field-data>
+          <name>strVal</name>
+          <value>dm</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>t9</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.CallMethod>
+      <state>1</state>
+      <methodName>memberOf</methodName>
+      <variable>t9</variable>
+      <callFieldValues>
+        <org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+          <field>memberOf</field>
+          <value>ab</value>
+          <nature>1</nature>
+          <type>String</type>
+        </org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+        <org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+          <field>memberOf</field>
+          <value>[ab]</value>
+          <nature>1</nature>
+          <type>Collection</type>
+        </org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+      </callFieldValues>
+    </org.drools.workbench.models.testscenarios.shared.CallMethod>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>strVal</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>combined_pojo_test</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2020-08-17 12:54:50.940 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.deepika.memberfunction_test</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
